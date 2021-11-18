@@ -75,7 +75,7 @@ body {
     left: 0;
     z-index: 1;
     border-radius: 10px;
-    background: no-repeat center / 58px 45px url(../img/Sold-out.png) rgba(0, 0, 0, 0.8);
+    background: no-repeat center / 58px 45px url(../img/Sold-out.svg) rgba(0, 0, 0, 0.8);
 }
 .vending-machine .list-item li.sold-out {
     pointer-events: none;
