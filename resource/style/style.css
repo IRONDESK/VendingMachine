@@ -34,6 +34,7 @@ body {
 
 #app .vending-machine {
     width: 360px;
+    height: 100%;
     box-sizing: border-box;
     background-color: #fff;
     padding: 31px 27px;
@@ -108,7 +109,7 @@ body {
 }
 
 /* contents */
-.cont-return {
+#app .cont-return {
     margin-top: 20px;
 }
 .cont-put {
@@ -217,7 +218,7 @@ body {
     height: 50px;
     background-color: #fff;
 }
-#app .my-info .cont-mymoney .info-mymoney {
+.my-info .cont-mymoney .info-mymoney {
     padding: 6px 10px;
     display: flex;
     align-items: center;
@@ -231,14 +232,14 @@ body {
 
 
 /* 획득한 음료 */
-.cont-myitems {
+#app .cont-myitems {
     width: 360px;
     background-color: #fff;
     margin-top: 20px;
     padding: 30px 27px;
     box-sizing: border-box;
 }
-.cont-myitems .txt-myitems{
+.cont-myitems .tit-myitem{
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -300,4 +301,22 @@ body {
     font-size: 12px;
     line-height: 17.3px;
     text-align: right;
+}
+
+@media screen
+and (min-device-width: 320px) /* 기기 넓이가 320px 이상 */
+and (max-device-width: 480px) /* 기기 넓이가 480px 이하 */
+and (-webkit-min-device-pixel-ratio: 2) /* 최소 1px당 2개 화소-레티나 대응 */
+{
+    body {
+        background-color: #fff;
+    }
+    #app {
+        padding-top: 70px;
+    }
+
+    #app .tit-app {
+        max-width: 166px;
+        height: 71px;
+    }
 }
